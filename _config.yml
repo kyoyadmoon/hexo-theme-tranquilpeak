@@ -118,7 +118,7 @@ author:
     # or in `source/assets/images/` (production)
     # or you can use an external url
     # Overwritten by your gravatar image if `gravatar_email` is filled
-    picture: avatar.jpg
+    picture: https://lh3.googleusercontent.com/-xLa5sN7a1hEeSDTNhrbW7yXakx-BsAvk7qvJcmMOhPSeNXOFruhYnFxyNb0ExBM0rShKn67sqp-kHlzw9jdCiKpV3Py7SMYfeXNc_Ph1_YoSAxbBdfwgGbMn5ojeuyzm37MeYvyZj4UoJvq9702MEoY3v1oRx_q5YzdUpzjtaIGlvrNMcwNheQxMz3vOMLClADbXCo6_IBydlFrhFUn--jEsSNMwF8cRcGK7m42CA84rzn2vL9mJhuMOXL0ktg_31VGtVz3GDlOXDKgUKZ3T1Fxy4E_8ldTBWWcMZCxgc6CvW5j_nbmM9xyLVXgwVWJco-rBjR71SjCPYf2NeRd9XbN4ywUrDvVWHSzuJbtuo63jHiuQALBeHWUADdnlYtMuXav5LnJea8cOZhlUX8xApzuU5jQuGoCQ635FgpnXRhoSt3wCJRKTg9Sgh-70LOzV_F0WJY8ghPbXKddG1ugKWeIT-P03UovRP-UkC_35Hd-xtyfbs3k9j0pZkareSAXKNdQ1yIJcd5I77stbLn1jZUEflP9276WVRJNZc4Q1YURbQ1QhsPdIngd7G3g69t0-jeN=s874-no
     # Your Twitter username without the @. E.g : `tranquilpeak`
     twitter:
     # Your google plus profile id. E.g : `+Tranquilpeak` or `123812884128439`
