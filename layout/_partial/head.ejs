@@ -72,10 +72,11 @@
 %>
 <head>
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta http-equiv="cache-control" content="max-age=604800" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="<%= config.title %>">
     <title><%= title %></title>
-    <meta name="author" content="<%= config.author %>">
+    <meta property="author" name="author" content="<%= config.author %>">
     <% if (keywords) { %>
         <meta name="keywords" content="<%= keywords %>">
     <% } %>
@@ -99,18 +100,21 @@
         <% }) %>
     <% } %>
     <% if (theme.gravatar_email) { %>
-        <meta property="og:image" content="<%- gravatar(theme.gravatar_email, 640) %>"/>
+        <!-- <meta property="og:image" content="<%- gravatar(theme.gravatar_email, 640) %>"/> -->
     <% } else if (theme.author.picture) { %>
-        <meta property="og:image" content="<%= resolve_asset_url(theme.image_dir, theme.author.picture) %>"/>
+        <!-- <meta property="og:image" content="<%= resolve_asset_url(theme.image_dir, theme.author.picture) %>"/> -->
     <% } %>
+
     <% if (page.thumbnailImage && page.thumbnailImage.length) { %>
         <meta property="og:image" content="<%= resolve_asset_url(page.path, page.thumbnailImage) %>"/>
         <meta class="swiftype" name="image" data-type="enum" content="<%= resolve_asset_url(page.path, page.thumbnailImage) %>" />
     <% } %>
+
     <% if (page.coverImage && page.coverImage.length) { %>
         <meta property="og:image" content="<%= resolve_asset_url(page.path, page.coverImage) %>"/>
         <meta class="swiftype" name="image" data-type="enum" content="<%= resolve_asset_url(page.path, page.coverImage) %>" />
     <% } %>
+
     <% if (page.photos && page.photos.length) { %>
         <% page.photos.forEach(function(photo) { %>
             <meta property="og:image" content="<%= resolve_asset_url(page.path, photo) %>" />
@@ -118,11 +122,21 @@
         <% }) %>
     <% } %>
     <!--STYLES-->
-    <%- css('assets/css/font-awesome.css') %>
-    <%- css('assets/css/jquery.fancybox.css') %>
-    <%- css('assets/css/jquery.fancybox-thumbs.css') %>
-    <%- css('assets/css/tranquilpeak.css') %>
+    <%- css('assets/css/style-rylrrsqywzl9hyui2n1ziymwh8cyf3cxpysf9outvwx8ofhjpty2ccllpauf.min.css') %>
     <!--STYLES END-->
     <%- partial('google-analytics') %>
     <%- partial('baidu-analytics') %>
+    <link rel="canonical" href="<%= url %>" />
+    <script type="text/javascript">
+    var host = "blog.dmoon.tw";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+    </script>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-4668115387428978",
+              enable_page_level_ads: true
+         });
+    </script>
 </head>

@@ -74,6 +74,10 @@ sidebar:
             title: global.facebook
             url: https://www.facebook.com/dmoonhuang
             icon: facebook
+        rss:
+            title: RSS
+            url: /atom.xml
+            icon: rss
         # google_plus:
         #     title: global.google_plus
         #     url: https://plus.google.com/
@@ -88,7 +92,7 @@ sidebar:
         #     icon: envelope-o
     rss:
         rss:
-            title: global.rss
+            title: RSS
             url: /atom.xml
             icon: rss
 
@@ -118,7 +122,7 @@ author:
     # or in `source/assets/images/` (production)
     # or you can use an external url
     # Overwritten by your gravatar image if `gravatar_email` is filled
-    picture: https://lh3.googleusercontent.com/-xLa5sN7a1hEeSDTNhrbW7yXakx-BsAvk7qvJcmMOhPSeNXOFruhYnFxyNb0ExBM0rShKn67sqp-kHlzw9jdCiKpV3Py7SMYfeXNc_Ph1_YoSAxbBdfwgGbMn5ojeuyzm37MeYvyZj4UoJvq9702MEoY3v1oRx_q5YzdUpzjtaIGlvrNMcwNheQxMz3vOMLClADbXCo6_IBydlFrhFUn--jEsSNMwF8cRcGK7m42CA84rzn2vL9mJhuMOXL0ktg_31VGtVz3GDlOXDKgUKZ3T1Fxy4E_8ldTBWWcMZCxgc6CvW5j_nbmM9xyLVXgwVWJco-rBjR71SjCPYf2NeRd9XbN4ywUrDvVWHSzuJbtuo63jHiuQALBeHWUADdnlYtMuXav5LnJea8cOZhlUX8xApzuU5jQuGoCQ635FgpnXRhoSt3wCJRKTg9Sgh-70LOzV_F0WJY8ghPbXKddG1ugKWeIT-P03UovRP-UkC_35Hd-xtyfbs3k9j0pZkareSAXKNdQ1yIJcd5I77stbLn1jZUEflP9276WVRJNZc4Q1YURbQ1QhsPdIngd7G3g69t0-jeN=s874-no
+    picture: https://zh-tw.gravatar.com/userimage/103575803/d07923037bbd8b9fe1a0b473e8fb61dc.jpeg
     # Your Twitter username without the @. E.g : `tranquilpeak`
     twitter:
     # Your google plus profile id. E.g : `+Tranquilpeak` or `123812884128439`
@@ -153,7 +157,7 @@ auto_thumbnail_image: true
 # Current image is on AWS S3 and delivered by AWS CloudFront.
 # Otherwise put your image in folder `source/_images/` (development)  or in `source/assets/images/` if you can't or don't want to build the theme,
 # and use relative url : `your-image.png`
-cover_image: cover.jpg
+cover_image: myCover.jpeg #https://images.unsplash.com/photo-1439694458393-78ecf14da7f9 #cover.jpg
 # Your favicon located in folder `source/_images/` (development) or in `source/assets/images/` (production)
 favicon:
 # Display an image gallery at the end of a post which have photos variables (false: disabled, true: enabled)
@@ -168,11 +172,11 @@ tag_pagination: true
 # You can't use Disqus and Duoshuo together
 # then fill the right shortname
 # Your Disqus shortname
-disqus_shortname: disqus_SFFhdWOeIx
+disqus_shortname: dmoonlaputa
 # Your Duoshuo shortname
 duoshuo_shortname:
 # Your Google analystics web property ID : UA-XXXXX-X
-google_analytics_id:
+google_analytics_id: UA-57006180-2
 # Your Baidu analystics web property ID : 9505a5af654a2478f93fd6c0ae4f687d
 baidu_analytics_id:
 # Your Gravatar email. Overwrite `author.picture` everywhere in the blog

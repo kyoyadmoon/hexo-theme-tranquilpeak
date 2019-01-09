@@ -21,7 +21,8 @@
             <div id="main" data-behavior="<%= sidebarBehavior %>"
                  class="<%= (page.coverImage ? 'hasCover' : '') %>
                         <%= (page.coverMeta === 'out' ? 'hasCoverMetaOut' : 'hasCoverMetaIn') %>
-                        <%= (page.coverCaption ? 'hasCoverCaption' : '') %>">
+                        <%= (page.coverCaption ? 'hasCoverCaption' : '') %>
+                        <%= (sidebarBehavior == 1) ? 'transparent' : '' %> " >
                 <%- body %>
                 <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
             </div>

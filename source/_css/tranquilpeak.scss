@@ -56,3 +56,102 @@
     'components/text',
     'components/tooltip',
     'components/video';
+
+.transparent {
+  background-color: rgba(0,0,0,0) !important;
+}
+
+.bg-white {
+  background-color: #FFF;
+}
+
+.main-section {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  margin-top: 20px;
+  // padding-left: 25px;
+  // padding-top: 10px;
+  padding: 20px 25px;
+}
+
+.avg-content-interval {
+
+}
+
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+
+.space-around {
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+
+
+$link-block-percent: 100%;
+$link-block-px: 290px;
+
+.button-link-block {
+  min-height: 5 * 45px;
+  height: -webkit-calc(#{$link-block-percent} - #{$link-block-px});
+  height:    -moz-calc(#{$link-block-percent} - #{$link-block-px});
+  height:         calc(#{$link-block-percent} - #{$link-block-px});
+  margin: 0;
+}
+
+.author-links {
+  padding-left: 10px;
+  padding-right: 13px;
+}
+
+.frosted-glass {
+  position: relative;
+  background: hsla(0,0%,100%,.3);
+  overflow: hidden;
+  z-index: 0;
+}
+
+.frosted-glass::before {
+    // content: '';
+    // position: absolute;
+    // top: 0; right: 0; bottom: 0; left: 0;
+    //                               /* for debugging */
+    // background: rgba(255,0,0,.5); /* 仅用于调试 */
+    // z-index: 0
+
+    // content: '';
+    // position: absolute;
+    // top: 0; right: 0; bottom: 0; left: 0;
+    // filter: blur(20px);;
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
+    margin: -30px;
+    z-index: -1;
+}
+
+$cover-image-url: '/assets/images/myCover.jpeg';//"https://images.unsplash.com/photo-1439694458393-78ecf14da7f9";
+
+//   mountain
+
+#cover, .frosted-glass::before {
+ background: url(#{$cover-image-url}) 0 / cover fixed !important;
+}
+
+#about-card p, #about-card i, #about-card #about-card-location {
+  color: #444 !important;
+}
